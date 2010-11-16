@@ -1,0 +1,218 @@
+/*
+
+    S6, dark theme
+    ---------------------
+
+    @file       pretty.css
+    @version    1.0
+    @date       2010-10-16
+    @author         Matthias Edler-Golla <meg@wachenfeld-golla.de>
+
+    Copyright (c) 2010 Wachenfeld + Golla, Buero fuer Gestaltung <http://wachenfeld-golla.de>
+
+	hier alle angaben, die das AUSSEHEN der verschiedenen themes beeinflusst!
+*/
+
+/* hier werden die Webfonts definiert */
+@import url(../f/League/stylesheet.css);
+
+html {
+	background-color: #2A2A2B;
+}
+
+body {
+	margin-top: 8px;
+    color: #f3f5f5;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#595A5C), to(#2A2A2B));
+	background-image:-moz-linear-gradient(53% 37% 270deg,#595A5C, #2A2A2B);
+    font-family: "Helvetica Neue",Helvetica,Arial,Sans-Serif;
+}
+
+h1 {
+    font-size: 150%;
+}
+
+h1#titel {
+    color: #bbbcbe;
+}
+
+h2#Seitenanzeige {
+    font-size: 160%;   
+}
+
+h2#Seitenanzeige strong {
+	font-weight: normal;
+}
+
+h2#Seitenanzeige span {
+	
+}
+
+div#inhaltsangabe {
+    background-color: rgba(255,255,255,0.92);
+    color: #444;
+}
+
+div#inhaltsangabe a:link,
+div#inhaltsangabe a:visited {
+    color: #444;
+}
+
+div#inhaltsangabe a:active,
+div#inhaltsangabe a:focus {
+    background-color: #ccc;
+}
+
+html.jsAktiv p#back {
+	border: 2px solid rgba(255,255,255,.1);
+	-webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+html.jsAktiv p#back:hover,
+html.jsAktiv p#back:focus,
+html.jsAktiv p#back:active {
+    background-color: rgba(255,255,255,.1);
+    border: 2px solid rgba(255,255,255,.3);
+}
+
+html.jsAktiv div#index {
+	display: block;
+    position: absolute;
+    right: .2em;
+    top: 3px;
+    width: 8.4em;
+    border: 2px solid rgba(255,255,255,0);
+    border-width: 0 2px 2px 2px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+html.jsAktiv div#index:hover,
+html.jsAktiv div#index:focus,
+html.jsAktiv div#index:active {
+    opacity: 1;
+    border-color: rgba(255,255,255,.2);
+}
+
+/* @group article */
+
+article {
+    background-color: #fff;
+    color: #444;
+    padding: 1em;
+    -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 5px;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+article.sichtbar {
+    /*border: 2px solid #e6ecee;*/
+    -webkit-border-radius: .2em;
+    -moz-border-radius: .2em;
+    border-radius: .2em;
+}
+
+article a:link,
+article a:visited {
+    color: #444;
+    text-decoration: none;
+    border-bottom: 1px dotted #444;
+}
+
+article a:visited {
+    color: #666868;
+}
+
+article a:hover,
+article a:active,
+article a:focus {
+    border-bottom: 1px solid;
+}
+
+article > h1 {
+    font-family: LeagueGothicRegular,Impact,Arial,Sans-Serif;
+    margin-bottom: .5em;
+    line-height: 1.1;
+    font-size:180%;
+}
+
+article h2,
+article h3,
+article h4,
+article h5,
+article h6 {
+    font-weight: bold;
+    margin-top: 1.4em;
+}
+
+article figcaption  {
+    font-size: 80%;
+}
+
+/* @end */
+
+article ul {
+    list-style-type: circle;
+}
+
+article ol {
+	list-style-type: decimal;
+}
+
+article div.source {
+    background-color: #fff;
+    border: 1px solid #e70000;
+    -webkit-border-radius: .2em;
+    -moz-border-radius: .2em;
+    border-radius: .2em;
+    font: 90%/1.4 "Courier New", Courier, mono;
+    color: #000;
+}
+
+pre {
+    font: 90%/1.4 "Courier New", Courier, mono;
+    color: #000;
+}
+
+article span.code {
+    color: #e70000;
+}
+
+article div.demo {
+    background-color: #fff;
+    border: 1px solid #b4b6b6;
+    -webkit-border-radius: .2em;
+    -moz-border-radius: .2em;
+    border-radius: .2em;
+    -webkit-box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.15);
+-moz-box-shadow: rgba(0, 0, 0, 0.15) 4px 4px 6px;
+box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.15);
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+article div.demo h2 {
+    margin-top: 0;
+}
+
+div#warnung p {
+	background-color: rgba(90,90,90,0.9);
+    border: 3px solid rgba(90,90,90,0.4);
+    -webkit-border-radius: .2em;
+    -moz-border-radius: .2em;
+    border-radius: .2em;
+    -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 2px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    color: #fff;
+}
+
+@media screen and (max-width: 640px) { 
+    div#inhaltsangabe h1.aktiv {
+        color: #ff8f67;
+    }
+}
+

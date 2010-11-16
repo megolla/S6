@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang=de>
+<head>
+<meta charset=utf-8>
+<title>S6 // 10-2010 // Demo</title>
+
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+<!-- http://maisonbisson.com/blog/post/13148/mobile-safari-advanced-features/ -->
+<!-- verhindert das zeigen des safari-chromes auf dem iPhone -->
+<meta name="apple-mobile-web-app-capable" content="yes" /> 
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+<link rel="apple-touch-icon" href="../../meta/apple-touch-icon.png" />
+<link rel="shortcut icon" href="../../meta/favicon.ico" />
+
+<!--[if !IE 6]><!--> 
+<link rel="stylesheet" media="all" href="../../meta/core/c/basic.css" />
+<!-- hier pfad zum jeweiligen theme anpassen! -->
+<link rel="stylesheet" media="all" href="../../meta/themes/bright/c/pretty.css" />
+<link rel="stylesheet" media="print" href="../../meta/core/c/print.css" />
+<!--<![endif]-->
+
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+		
+</head>
+<body>
+
+<!--[if IE ]>
+<p style="background-color:red;color:#fff;padding:1em;text-align:center;font-size:2.1em;">Sorry, aber die Präsentation läuft nicht vernünftig auf dem Internet Explorer!<br />Bitte verwenden Sie einen <strong>modernen Browser</strong> (Firefox, Google Chrome, Safari, Opera …)</p>
+<![endif]-->
+
+<h1 id="titel">S6 // 10-2010 // Demo</h1>
+
+<hr />
+
+<div id="index" title="Übersicht aller Seiten dieser Präsentation">
+<h2 id="Seitenanzeige"><span></span> | <strong></strong></h2>
+<hr />
+<div id="inhaltsangabe"></div>
+</div><!-- /index -->
+
+<hr />
+
+<div id="wrap">
+
+<p id="back" title="eine Seite zurück">&#160;</p><hr />
+
+<hr /><!-- ########## -->
+
+<article>
+<h1>Präsentationen aus der Hosentasche</h1>
+
+<figure>
+<img src="pix/semanticWebCandies.jpg" alt="semanticWebCandies" />
+<figcaption><a href="http://www.flickr.com/photos/39443894507@N01/4287666265/">Semantic Web Candies:</a> Foto von <a href="http://www.flickr.com/people/reedsturtevant/">Reed Sturtevant</a></figcaption>
+</figure>
+
+<p>Zum Weiterblättern bitte mit Mouse oder Finger innerhalb der weißen Fläche klicken…</p>
+</article>
+
+<hr /><!-- ########## -->
+
+<article>
+<h1>Übersicht aller Slides</h1>
+<p>Wenn Sie auf die „Seitenzahlen“ (oben rechts im Browserfenster) klicken, wird die Übersicht aller Slides sichtbar.</p>
+</article>
+
+<hr /><!-- ########## -->
+
+<article>
+<h1>Bedienung via Tastatur</h1>
+
+<dl>	
+<dt>0 („Null“)</dt>
+<dd>Zurück zur ersten Seite der Präsentation</dd>
+
+<dt>→ (Pfeiltaste rechts)</dt>
+<dd>Nächste Seite</dd>
+
+<dt>← (Pfeiltaste links)</dt>
+<dd>Vorherige Seite</dd>
+
+<dt>C</dt>
+<dd>Aufruf eines deutlich größeren Cursors – funktioniert momentan nur bei Safari & Chrome</dd>
+
+<dt>?</dt>
+<dd>Darstellen der Tastaturbefehle – aber das haben Sie ja gefunden!</dd>
+
+<dt>SPACE („Leerzeichen“)</dt>
+<dd>Übersicht aller Slides sichtbar/unsichtbar schalten</dd>
+</dl>
+
+</article>
+
+<hr /><!-- ########## -->
+
+<article>
+<h1>Verlinken auf einen speziellen Slide</h1>
+<p>Wenn Sie Ihre Präsentation online gestellt haben und z.B. via eMail auf einen speziellen Slide verweisen wollen, können Sie dies folgendermaßen machen:</p>
+
+<div class="source">
+<pre>
+http://servername.de/demo/index.html<strong>#A_7</strong>
+
+hier meine &lt;<strong>a href=&quot;http://servername.de/demo/index.html#A_7</strong>&quot;&gt;Angaben&lt;/a&gt;
+</pre>
+</div>
+
+<p><strong>#A_7</strong> gibt dabei an, dass S6 auf das Slide mit der Nummer „7“ springen soll – die Nummer des jeweiligen Slides sieht man oben rechts im Browserfenster!</p>
+
+</article>
+
+<hr /><!-- ########## -->
+
+<hr /><!-- ########## -->
+
+<article>
+<h1>Erstellen einer neuen Präsentation (1)</h1>
+<p>Bitte legen Sie eine neue Präsentation <strong>paralell</strong> zur hier dargestellten Präsentation „demo“ an – dadurch bleiben alle relativen Pfade zu den „meta“-Dateien enthalten!</p>
+<p><em>Am einfachsten erstellen Sie eine neue Präsentation indem Sie den <strong>kompletten Ordner „demo“</strong> kopieren und diesen anschliessend umbenennen…</em></p>
+
+<figure>
+	<img src="pix/S6_Dateistruktur.png" alt="S6_Dateistruktur" />
+	<figcaption>„meineEigenePraesentation“ ist die neu angelegte Präsentation</figcaption>
+</figure>
+</article>
+
+<hr /><!-- ########## -->
+
+<article>
+<h1>Erstellen einer neuen Präsentation (2)</h1>
+
+<ol>
+<li>Ändern Sie im &lt;title&gt; und im &lt;h1 id=&quot;titel&quot;&gt; den Namen der Präsentation</li>
+<li>Falls Sie statt des hellen Hintergrundes lieber einen dunklen verwenden möchten, müssen Sie bei der Verlinkung des Stylesheets dies noch ändern:</li>
+</ol>
+
+<figure style="margin:1.4em 0">
+	<img src="pix/skin_bright.gif" alt="skin_bright" />
+	<figcaption>Auswahl des hellen Hintergrundes</figcaption>
+</figure>
+
+<figure>
+	<img src="pix/skin_dark.gif" alt="skin_dark" />
+	<figcaption>Auswahl des dunklen Hintergrundes</figcaption>
+</figure>
+</article>
+
+<article>
+<h1>Hinzufügen von Slides</h1>
+<div class="source">
+<pre>
+&lt;article&gt;
+  &lt;h1&gt;&Uuml;berschrift&lt;/h1&gt;
+  &lt;figure&gt;
+    &lt;!-- keine Breiten- und H&ouml;hen-Angaben hier, 
+    damit das Bild &#8222;elastisch&#8220; bleibt! --&gt;
+    &lt;img src=&quot;demo.jpg&quot; alt=&quot;ein demobild&quot;&gt;
+    &lt;figcaption&gt;Ein sch&ouml;nes Demobild&lt;/figcaption&gt;
+  &lt;/figure&gt;
+  &lt;p&gt;Paragraph mit weiteren Informationen&lt;/p&gt;
+&lt;/article&gt;
+</pre>
+</div>
+
+<p>Jeder neuer Slide muss innerhalb eines &lt;article&gt;-Tags stehen;<br />&lt;h1&gt;-&Uuml;berschriften werden via Webfont besonders behandelt.</p>
+</article>
+
+<hr /><!-- ########## -->
+
+<article>
+<h1>Eigenes Theme erstellen</h1>
+<figure>
+<img src="pix/S6_Dateistruktur_2.png" alt="S6_Dateistruktur_2" width="771" height="593" />
+</figure>
+
+<p>Die Themes befinden sich bei „meta“ im Ordner „themes“ – dort muss hauptsächlich die Datei „pretty.css“ bearbeitet werden, um das Theme zu verändern…</p>
+</article>
+
+<hr /><!-- ########## -->
+
+<article>
+<h1>Download von S6</h1>
+<p>S6 kann bei <a href="http://github.com/">Github</a> heruntergeladen oder – noch besser – geforkt werden: <a href="http://github.com/megolla/S6">http://github.com/megolla/S6</a></p>
+
+<p>S6 wurde unter folgender Lizenz veröffentlicht:<br /><a href="http://creativecommons.org/licenses/by/3.0/" rel="license">Creative Commons Attribution 3.0</a></p>
+</article>
+
+</div><!-- /wrap -->
+	
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script>!window.jQuery && document.write('<script src="../../meta/core/js/jquery-1.4.2.min.js"><\/script>')</script>
+<script src="../../meta/core/js/thias.js"></script>
+
+</body>
+</html>

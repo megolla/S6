@@ -1,0 +1,78 @@
+/*
+
+    S6
+    ---------------------
+
+    @file       print.css
+    @version    1.0
+    @date       2010-09-20
+    @author         Matthias Edler-Golla <meg@wachenfeld-golla.de>
+
+    Copyright (c) 2010 Wachenfeld + Golla, Buero fuer Gestaltung <http://wachenfeld-golla.de>
+
+*/
+
+* {
+    background: transparent !important;
+    color: #444 !important;
+    text-shadow: none;
+}
+
+body {
+	font-size: 6pt;
+}
+
+div#wrap {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+}
+
+h1#titel {
+	margin-bottom: 1cm;
+}
+
+h2#Seitenanzeige {
+	display: none !important;
+}
+
+a, a:visited {
+    color: #444 !important;
+    text-decoration: underline;
+}
+
+a:after {
+    content: " (" attr(href) ")";
+}
+
+abbr:after {
+    content: " (" attr(title) ")";
+}
+
+article,
+article.sichtbar {
+	border: none !important;
+    border-bottom: 1px dotted #444 !important;
+    page-break-inside: avoid;
+    background-color: transparent;
+    display: block !important;
+    min-height: inherit !important;
+    -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+	-moz-box-shadow: rgba(0, 0, 0, 0) 0 0 0;
+	box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+img {
+    page-break-inside: avoid;
+}
+
+@page { margin: 0.5cm; }
+
+p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+}
+
+h2, h3 {
+    page-break-after: avoid;
+}

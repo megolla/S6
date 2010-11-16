@@ -1,0 +1,369 @@
+/*
+
+    S6
+    ---------------------
+
+    @file       basic.css
+    @version    1.0
+    @date       2010-11-16
+    @author         Matthias Edler-Golla <meg@wachenfeld-golla.de>
+
+    Copyright (c) 2010 Wachenfeld + Golla, Buero fuer Gestaltung <http://wachenfeld-golla.de>
+
+*/
+
+/* @group html5doctor.com Reset Stylesheet */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,dialog,figure,footer,header,hgroup,menu,nav,section,menu,time,mark,audio,video{border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0}body{line-height:1}article,aside,dialog,figure,footer,header,hgroup,nav,section{display:block}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}a{border:0;font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:700}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted #000;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{height:1px;border:0;border-top:1px solid #ccc;display:none;margin:1em 0;padding:0}input,select{vertical-align:middle}h1,h2,h3,h4,h5,h6{font-weight:400;font-size:100%}q:before{content:"\201E"}q:after{content:"\201C"}.unsichtbar,.nurprint{position:absolute;width:1px;top:-1000px;left:-1000px}.group:after{visibility:hidden;display:block;font-size:0;content:".";clear:both;height:0}* html .group{height:1%}:first-child+html .group{min-height:1px}
+/* @end */
+
+a:active,
+a:focus {
+    position: relative;
+    top: 1px;
+    left: 1px;
+}
+
+html {
+    overflow-y:scroll;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font: 62.5%/1.4 Georgia,Times,Serif;
+}
+
+h1 {
+    text-rendering: optimizeLegibility;
+}
+
+h1#titel {
+    width: 92%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: .3em 0 0 7px;
+    cursor: help;
+}
+
+div#wrap {
+    width: 90%;
+    max-width: 55em;
+    margin: 28px auto;
+    position: relative;
+    font-size:1.6em;
+}
+
+/* @group div#inhaltsangabe */
+
+/* @group index */
+
+div#index {
+    display: none;
+}
+
+/* @end */
+
+h2#Seitenanzeige {
+    display: none;
+}
+
+html.jsAktiv h2#Seitenanzeige {
+    display: block;
+    text-align: right;
+    margin: .3em .6em 0 0;
+    padding-right: .9em;
+    background: url(../p/icons/showMenu.gif) no-repeat 100% center;
+    color: #8f9090;
+}
+
+/* @group div#inhaltsangabe */
+
+div#inhaltsangabe {
+    display: none;
+}
+
+/* macht nur bei aktivem JS sind! */
+html.jsAktiv div#inhaltsangabe {
+    display: block;
+    text-indent: 0;
+    width: 60em;
+    font-size: 90%;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    text-align: left;
+    padding: .5em .5em .5em 1.5em;
+    -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: rgba(0, 0, 0, 0.3) 2px 2px 4px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: .4em;
+    -moz-border-radius: .4em;
+    border-radius: .4em;
+    z-index: 100;
+}
+
+div#inhaltsangabe h1 {
+    padding: .6em 0;
+}
+
+/* "vieleEintraege" wird von jQuery erzeugt, wenn die Liste mehr als 15 Eintraege hat */
+html.jsAktiv div#inhaltsangabe.vieleEintraege h1 {
+    padding: .25em 0;
+}
+
+div#inhaltsangabe a:link,
+div#inhaltsangabe a:visited {
+    text-decoration: none;
+}
+
+div#inhaltsangabe a:hover {
+    text-decoration: underline;
+}
+
+div#inhaltsangabe a:active,
+div#inhaltsangabe a:focus {
+    position: relative;
+    left: 2px;
+    top: 2px;
+}
+
+div#inhaltsangabe h1 {
+    font-style: normal;
+}
+
+div#inhaltsangabe h1.aktiv {
+    font-weight: bold;
+}
+
+.aktiv:after {
+    content: "→";
+    margin-left: 1em;
+}
+
+/* @end */
+
+/* @end */
+
+/* @group zurueck-button */
+
+p#back {
+    display: none;
+}
+
+html.jsAktiv p#back {
+    display: block;
+    text-indent: -10000px;
+    position: absolute;
+    left: -47px;
+    top: 0px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background: rgba(255,255,255,0) url(../p/icons/zurueck.gif) no-repeat center center;
+}
+
+/* @end */
+
+/* @group article */
+
+article {
+    min-height: 500px;
+    margin-bottom: 1.4em;
+}
+
+html.jsAktiv article {
+    cursor:url(../p/icons/weiterCursor.gif), url(../p/icons/weiterCursor.ico), url(../p/icons/weiterCursor.cur), e-resize; 
+}
+
+/* klasse "pointerCursor" wird via jQuery eingefuegt */
+html.jsAktiv article.pointerCursor {
+    cursor:url(../p/icons/pointerCursor.gif), default; 
+}
+
+article a[href*="//"] {
+    padding-right: 15px;
+    background: url(../p/icons/link_extern.gif) no-repeat right center;
+}
+
+article h1 + h2 {
+    margin-top: 0;
+}
+
+article .abstandU {
+    margin-bottom: 1.4em;
+}
+
+article p,
+article ul,
+article ol,
+article dl {
+    max-width: 80%;
+}
+
+article p + p {
+    margin-top: 1.4em;
+}
+
+/* @group artile img */
+
+article figure {
+    margin-bottom: 1.4em;
+}
+
+article p + figure {
+    margin-top: 1.4em;
+}
+
+article figcaption {
+    max-width: 100%;
+    display: block;
+}
+
+article img {
+    max-width: 100%;
+}
+
+article img.imgFloatRight {
+    float: right;
+    width: 50%;
+}
+
+/* @end */
+
+article ul {
+    margin-left: 1.2em;
+}
+
+article p + ul,
+article p + ol {
+    margin-top: 1.4em;
+}
+
+article ul + p,
+article ol + p {
+    margin-top: 1.4em;
+}
+
+article ol {
+    margin-left: 1.4em;
+}
+
+article ol ul {
+    margin-bottom: 1.4em;
+}
+
+article dt {
+    font-weight: bold;
+}
+
+article dd {
+    margin-bottom: 1.4em;
+}
+
+article dd + dd {
+    margin-top: -1.4em;
+}
+
+article div.source {
+    margin: 1.4em 0;
+    padding: 1em;
+}
+
+article div.demo {
+    margin: 1.4em 0;
+    padding: 1em;
+}
+
+/* @end */
+
+/* @group div#warnung  */
+
+div#warnung {
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    left: 0;
+    z-index: 100;
+}
+
+div#warnung p {
+    text-align: center;
+    font-size: 1.8em;
+    padding: 2em 0;
+    width: 20em;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+/* @end */
+
+/* @group hilfe */
+
+div#hilfe {
+	position: absolute;
+    width: 100%;
+    top: 3%;
+    left: 0;
+    z-index: 100;
+}
+
+div#hilfe article.hilfe {
+	width: 70%;
+    margin: 0 auto;
+    background-color: rgba(255,250,150,.9);
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    border-radius: 2em;
+}
+
+/* @end */
+
+@media screen and (max-width: 768px) { 
+    
+    div#wrap {
+        margin-top: 2.4em;
+        width: 98%;
+    }
+    
+    html.jsAktiv p#back { 
+        width: 26px;
+        height: 26px;
+        top:-32px;
+        left: 0;
+    } 
+    
+    html.jsAktiv div#inhaltsangabe {
+        font-size: 90%;
+        width: 45em;
+    }
+    
+    article p,
+    article ul,
+    article ol,
+    article dl {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) { 
+    body {
+         /*hier den text kleiner!*/ 
+        font-size: 50%;
+    }
+    
+    div#wrap {
+        margin-top: 2.6em;
+        width: 98%;
+    }
+    
+    html.jsAktiv div#inhaltsangabe {
+        width: 30em;
+    }
+}
+
+@media screen and (max-width: 320px) { 
+    html.jsAktiv div#index {
+        top: 3.3em;
+    }
+}
+
