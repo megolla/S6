@@ -64,6 +64,7 @@ article.sichtbar {
 
 img {
     page-break-inside: avoid;
+    float:none !important;
 }
 
 @page { margin: 0.5cm; }

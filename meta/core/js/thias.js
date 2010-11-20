@@ -262,7 +262,7 @@ $(function(){
 
 // hiermit kann man z.b. via eMail oder Link auf einer Website auf einen bestimmten 
 // Artikel in der Presentation verweisen
-// typische Adresse: http://mcthias-2.local:8888/scripte_iPad/jQuery_presentation/index.html#A_7
+// typische Adresse: http://demo.de/index.html#A_7
 $(function(){
 	// z.b #A_0
 	var ha = window.location.hash;

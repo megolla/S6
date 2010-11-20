@@ -1,3 +1,5 @@
+/* @override http://mcthias-2.local:8888/S6/meta/core/c/basic.css */
+
 /*
 
     S6
@@ -5,7 +7,7 @@
 
     @file       basic.css
     @version    1.0
-    @date       2010-11-16
+    @date       2010-11-20
     @author         Matthias Edler-Golla <meg@wachenfeld-golla.de>
 
     Copyright (c) 2010 Wachenfeld + Golla, Buero fuer Gestaltung <http://wachenfeld-golla.de>
@@ -366,4 +368,15 @@ div#hilfe article.hilfe {
         top: 3.3em;
     }
 }
+
+/* iPhone 4, iPod Touch Retina */
+@media 
+	only screen and (-webkit-min-device-pixel-ratio : 1.5),
+	only screen and (min-device-pixel-ratio : 1.5) {
+    
+    article dl {
+		font-size: .7em;
+	}
+}
+
 
